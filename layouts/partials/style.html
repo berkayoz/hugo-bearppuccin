@@ -1,31 +1,160 @@
 <style>
   :root {
+    /* Common settings */
     --width: 720px;
     --font-main: Verdana, sans-serif;
     --font-secondary: Verdana, sans-serif;
     --font-scale: 1em;
-    --background-color: #fff;
-    --heading-color: #222;
-    --text-color: #444;
-    --link-color: #3273dc;
-    --visited-color: #8b6fcb;
-    --code-background-color: #f2f2f2;
-    --code-color: #222;
-    --blockquote-color: #222;
+    
+    /* Catppuccin Latte (Light) */
+    --rosewater: #dc8a78;
+    --flamingo: #dd7878;
+    --pink: #ea76cb;
+    --mauve: #8839ef;
+    --red: #d20f39;
+    --maroon: #e64553;
+    --peach: #fe640b;
+    --yellow: #df8e1d;
+    --green: #40a02b;
+    --teal: #179299;
+    --sky: #04a5e5;
+    --sapphire: #209fb5;
+    --blue: #1e66f5;
+    --lavender: #7287fd;
+    --text: #4c4f69;
+    --subtext1: #5c5f77;
+    --subtext0: #6c6f85;
+    --overlay2: #7c7f93;
+    --overlay1: #8c8fa1;
+    --overlay0: #9ca0b0;
+    --surface2: #acb0be;
+    --surface1: #bcc0cc;
+    --surface0: #ccd0da;
+    --base: #eff1f5;
+    --mantle: #e6e9ef;
+    --crust: #dce0e8;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --background-color: #01242e;
-      --heading-color: #eee;
-      --text-color: #ddd;
-      --link-color: #8cc2dd;
-      --visited-color: #8b6fcb;
-      --code-background-color: #000;
-      --code-color: #ddd;
-      --blockquote-color: #ccc;
+      /* Catppuccin Mocha (Dark) */
+      --rosewater: #f5e0dc;
+      --flamingo: #f2cdcd;
+      --pink: #f5c2e7;
+      --mauve: #cba6f7;
+      --red: #f38ba8;
+      --maroon: #eba0ac;
+      --peach: #fab387;
+      --yellow: #f9e2af;
+      --green: #a6e3a1;
+      --teal: #94e2d5;
+      --sky: #89dceb;
+      --sapphire: #74c7ec;
+      --blue: #89b4fa;
+      --lavender: #b4befe;
+      --text: #cdd6f4;
+      --subtext1: #bac2de;
+      --subtext0: #a6adc8;
+      --overlay2: #9399b2;
+      --overlay1: #7f849c;
+      --overlay0: #6c7086;
+      --surface2: #585b70;
+      --surface1: #45475a;
+      --surface0: #313244;
+      --base: #1e1e2e;
+      --mantle: #181825;
+      --crust: #11111b;
     }
   }
+  
+  /* Generated using: hugo gen chromastyles --style=catppuccin-* */
+
+  /* Background */ .bg { color:var(--text);background-color:var(--mantle); }
+  /* PreWrapper */ .chroma { color:var(--text);background-color:var(--mantle); }
+  /* Other */ .chroma .x {  }
+  /* Error */ .chroma .err { color:var(--red) }
+  /* CodeLine */ .chroma .cl {  }
+  /* LineLink */ .chroma .lnlinks { outline:none;text-decoration:none;color:inherit }
+  /* LineTableTD */ .chroma .lntd { vertical-align:top;padding:0;margin:0;border:0; }
+  /* LineTable */ .chroma .lntable { border-spacing:0;padding:0;margin:0;border:0; }
+  /* LineHighlight */ .chroma .hl { background-color:var(--surface1) }
+  /* LineNumbersTable */ .chroma .lnt { white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:var(--overlay1) }
+  /* LineNumbers */ .chroma .ln { white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:var(--overlay1) }
+  /* Line */ .chroma .line { display:flex; }
+  /* Keyword */ .chroma .k { color:var(--mauve) }
+  /* KeywordConstant */ .chroma .kc { color:var(--peach) }
+  /* KeywordDeclaration */ .chroma .kd { color:var(--red) }
+  /* KeywordNamespace */ .chroma .kn { color:var(--teal) }
+  /* KeywordPseudo */ .chroma .kp { color:var(--mauve) }
+  /* KeywordReserved */ .chroma .kr { color:var(--mauve) }
+  /* KeywordType */ .chroma .kt { color:var(--red) }
+  /* Name */ .chroma .n {  }
+  /* NameAttribute */ .chroma .na { color:var(--blue) }
+  /* NameClass */ .chroma .nc { color:var(--yellow) }
+  /* NameConstant */ .chroma .no { color:var(--yellow) }
+  /* NameDecorator */ .chroma .nd { color:var(--blue);font-weight:bold }
+  /* NameEntity */ .chroma .ni { color:var(--teal) }
+  /* NameException */ .chroma .ne { color:var(--peach) }
+  /* NameLabel */ .chroma .nl { color:var(--sky) }
+  /* NameNamespace */ .chroma .nn { color:var(--peach) }
+  /* NameOther */ .chroma .nx {  }
+  /* NameProperty */ .chroma .py { color:var(--peach) }
+  /* NameTag */ .chroma .nt { color:var(--mauve) }
+  /* NameBuiltin */ .chroma .nb { color:var(--sky) }
+  /* NameBuiltinPseudo */ .chroma .bp { color:var(--sky) }
+  /* NameVariable */ .chroma .nv { color:var(--rosewater) }
+  /* NameVariableClass */ .chroma .vc { color:var(--rosewater) }
+  /* NameVariableGlobal */ .chroma .vg { color:var(--rosewater) }
+  /* NameVariableInstance */ .chroma .vi { color:var(--rosewater) }
+  /* NameVariableMagic */ .chroma .vm { color:var(--rosewater) }
+  /* NameFunction */ .chroma .nf { color:var(--blue) }
+  /* NameFunctionMagic */ .chroma .fm { color:var(--blue) }
+  /* Literal */ .chroma .l {  }
+  /* LiteralDate */ .chroma .ld {  }
+  /* LiteralString */ .chroma .s { color:var(--green) }
+  /* LiteralStringAffix */ .chroma .sa { color:var(--red) }
+  /* LiteralStringBacktick */ .chroma .sb { color:var(--green) }
+  /* LiteralStringChar */ .chroma .sc { color:var(--green) }
+  /* LiteralStringDelimiter */ .chroma .dl { color:var(--blue) }
+  /* LiteralStringDoc */ .chroma .sd { color:var(--overlay0) }
+  /* LiteralStringDouble */ .chroma .s2 { color:var(--green) }
+  /* LiteralStringEscape */ .chroma .se { color:var(--blue) }
+  /* LiteralStringHeredoc */ .chroma .sh { color:var(--overlay0) }
+  /* LiteralStringInterpol */ .chroma .si { color:var(--green) }
+  /* LiteralStringOther */ .chroma .sx { color:var(--green) }
+  /* LiteralStringRegex */ .chroma .sr { color:var(--teal) }
+  /* LiteralStringSingle */ .chroma .s1 { color:var(--green) }
+  /* LiteralStringSymbol */ .chroma .ss { color:var(--green) }
+  /* LiteralNumber */ .chroma .m { color:var(--peach) }
+  /* LiteralNumberBin */ .chroma .mb { color:var(--peach) }
+  /* LiteralNumberFloat */ .chroma .mf { color:var(--peach) }
+  /* LiteralNumberHex */ .chroma .mh { color:var(--peach) }
+  /* LiteralNumberInteger */ .chroma .mi { color:var(--peach) }
+  /* LiteralNumberIntegerLong */ .chroma .il { color:var(--peach) }
+  /* LiteralNumberOct */ .chroma .mo { color:var(--peach) }
+  /* Operator */ .chroma .o { color:var(--sky);font-weight:bold }
+  /* OperatorWord */ .chroma .ow { color:var(--sky);font-weight:bold }
+  /* Punctuation */ .chroma .p {  }
+  /* Comment */ .chroma .c { color:var(--overlay0);font-style:italic }
+  /* CommentHashbang */ .chroma .ch { color:var(--overlay0);font-style:italic }
+  /* CommentMultiline */ .chroma .cm { color:var(--overlay0);font-style:italic }
+  /* CommentSingle */ .chroma .c1 { color:var(--overlay0);font-style:italic }
+  /* CommentSpecial */ .chroma .cs { color:var(--overlay0);font-style:italic }
+  /* CommentPreproc */ .chroma .cp { color:var(--overlay0);font-style:italic }
+  /* CommentPreprocFile */ .chroma .cpf { color:var(--overlay0);font-weight:bold;font-style:italic }
+  /* Generic */ .chroma .g {  }
+  /* GenericDeleted */ .chroma .gd { color:var(--red);background-color:var(--surface0) }
+  /* GenericEmph */ .chroma .ge { font-style:italic }
+  /* GenericError */ .chroma .gr { color:var(--red) }
+  /* GenericHeading */ .chroma .gh { color:var(--peach);font-weight:bold }
+  /* GenericInserted */ .chroma .gi { color:var(--green);background-color:var(--surface0) }
+  /* GenericOutput */ .chroma .go {  }
+  /* GenericPrompt */ .chroma .gp {  }
+  /* GenericStrong */ .chroma .gs { font-weight:bold }
+  /* GenericSubheading */ .chroma .gu { color:var(--peach);font-weight:bold }
+  /* GenericTraceback */ .chroma .gt { color:var(--red) }
+  /* GenericUnderline */ .chroma .gl { text-decoration:underline }
+  /* TextWhitespace */ .chroma .w {  }
 
   body {
     font-family: var(--font-secondary);
@@ -34,11 +163,11 @@
     padding: 20px;
     max-width: var(--width);
     text-align: left;
-    background-color: var(--background-color);
+    background-color: var(--base);
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
-    color: var(--text-color);
+    color: var(--subtext1);
   }
 
   h1,
@@ -48,11 +177,11 @@
   h5,
   h6 {
     font-family: var(--font-main);
-    color: var(--heading-color);
+    color: var(--text);
   }
 
   a {
-    color: var(--link-color);
+    color: var(--blue);
     cursor: pointer;
     text-decoration: none;
   }
@@ -67,7 +196,7 @@
 
   strong,
   b {
-    color: var(--heading-color);
+    color: var(--text);
   }
 
   button {
@@ -100,15 +229,13 @@
 
   code {
     font-family: monospace;
-    padding: 2px;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
+    color: var(--text);
     border-radius: 3px;
   }
 
   blockquote {
-    border-left: 1px solid #999;
-    color: var(--code-color);
+    border-left: 1px solid var(--overlay0);
+    color: var(--text);
     padding-left: 20px;
     font-style: italic;
   }
@@ -133,8 +260,7 @@
   .highlight,
   .code {
     padding: 1px 15px;
-    background-color: var(--code-background-color);
-    color: var(--code-color);
+    color: var(--text);
     border-radius: 3px;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -156,7 +282,7 @@
   }
 
   ul.blog-posts li a:visited {
-    color: var(--visited-color);
+    color: var(--mauve);
   }
 
 </style>
