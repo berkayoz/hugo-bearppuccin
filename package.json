@@ -1,8 +1,8 @@
 {
-  "name": "hugo-bearblog",
+  "name": "hugo-bearppuccin",
   "private": true,
   "version": "1.0.0",
-  "description": "🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).",
+  "description": "🐱 [Hugo Bear Blog](https://github.com/janraasch/hugo-bearblog) but with [Catppuccin](https://github.com/catppuccin) colors!",
   "main": "index.js",
   "devDependencies": {
     "js-beautify": "^1.15.4"
@@ -13,16 +13,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janraasch/hugo-bearblog.git"
+    "url": "git+https://github.com/berkayoz/hugo-bearppuccin.git"
   },
   "author": {
-    "name": "Jan Raasch",
-    "email": "jan@janraasch.com",
-    "url": "https://www.janraasch.com"
+    "name": "Berkay Tekin Oz",
+    "email": "oss@berkay.tech",
+    "url": "https://berkay.tech"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/janraasch/hugo-bearblog/issues"
+    "url": "https://github.com/berkayoz/hugo-bearppuccin/issues"
   },
-  "homepage": "https://github.com/janraasch/hugo-bearblog#readme"
+  "homepage": "https://github.com/berkayoz/hugo-bearppuccin#readme"
 }

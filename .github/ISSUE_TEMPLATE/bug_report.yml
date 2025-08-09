@@ -7,7 +7,7 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report! Before you proceed:
         
-        1. 🔍 Please search [existing issues](https://github.com/janraasch/hugo-bearblog/issues) to avoid duplicates
+        1. 🔍 Please search [existing issues](https://github.com/berkayoz/hugo-bearppuccin/issues) to avoid duplicates
         2. 💭 For general usage questions, consider posting on [Hugo Discourse](https://discourse.gohugo.io/)
 
   - type: textarea

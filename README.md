@@ -1,4 +1,4 @@
-# Hugo ʕ•ᴥ•ʔ Bear Blog [![CI](https://github.com/janraasch/hugo-bearblog/actions/workflows/ci.yml/badge.svg)](https://github.com/janraasch/hugo-bearblog/actions/workflows/ci.yml)
+# Hugo ʕ•ᴥ•ʔ Bear Blog [![CI](https://github.com/berkayoz/hugo-bearppuccin/actions/workflows/ci.yml/badge.svg)](https://github.com/berkayoz/hugo-bearppuccin/actions/workflows/ci.yml)
 
 🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).
 
@@ -14,14 +14,14 @@ For a current & working demo of this theme, please check out https://janraasch.g
 
 ⬛️ [Dark][dark-screenshot]
 
-When the user's browser is running »dark mode«, the dark color scheme will be used automatically. The default is the light/white color scheme. Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file for the implementation.
+When the user's browser is running »dark mode«, the dark color scheme will be used automatically. The default is the light/white color scheme. Check out the [`style.html`](https://github.com/berkayoz/hugo-bearppuccin/blob/master/layouts/partials/style.html)-file for the implementation.
 
 ## Installation
 
 If you already have a Hugo site on your machine, you can simply add this theme via
 
 ```bash
-git submodule add https://github.com/janraasch/hugo-bearblog.git themes/hugo-bearblog
+git submodule add https://github.com/berkayoz/hugo-bearppuccin.git themes/hugo-bearblog
 ```
 
 Then, adjust the `hugo.toml` as detailed below.
@@ -30,7 +30,7 @@ For more information, read the official [setup guide][hugo-setup-guide] of Hugo.
 
 ## Adjust configuration / hugo.toml
 
-Please check out the [hugo.toml](https://github.com/janraasch/hugo-bearblog/blob/master/exampleSite/hugo.toml) included in the [exampleSite](https://github.com/janraasch/hugo-bearblog/tree/master/exampleSite) of this theme.
+Please check out the [hugo.toml](https://github.com/berkayoz/hugo-bearppuccin/blob/master/exampleSite/hugo.toml) included in the [exampleSite](https://github.com/berkayoz/hugo-bearppuccin/tree/master/exampleSite) of this theme.
 
 ## Content & structure
 
@@ -62,7 +62,7 @@ hugo new blog/my-new-post.md
 
 ### Adding your branding / colors / css
 
-Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you may add a `<style>`-tag, *or* you may add a `<link>`-tag referencing your own `custom.css` (in case you prefer to have a separate `.css`-file). Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file to find out which CSS-styles are applied by default.
+Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you may add a `<style>`-tag, *or* you may add a `<link>`-tag referencing your own `custom.css` (in case you prefer to have a separate `.css`-file). Check out the [`style.html`](https://github.com/berkayoz/hugo-bearppuccin/blob/master/layouts/partials/style.html)-file to find out which CSS-styles are applied by default.
 
 ## Remixes 🎭
 
@@ -79,8 +79,8 @@ _Note: These are independent forks maintained by their respective creators._
 Interested in contributing to Hugo ʕ•ᴥ•ʔ Bear Blog? Thanks for your interest!
 
 - Check out our [Contributing Guidelines](CONTRIBUTING.md) for code contributions and bug reports
-- [Share your story](https://github.com/janraasch/hugo-bearblog/issues/new/choose) if you're using the theme - we'd love to see what you've built!
-- Have questions? You can find help in our [GitHub issues](https://github.com/janraasch/hugo-bearblog/issues) or the [Hugo Discourse](https://discourse.gohugo.io/)
+- [Share your story](https://github.com/berkayoz/hugo-bearppuccin/issues/new/choose) if you're using the theme - we'd love to see what you've built!
+- Have questions? You can find help in our [GitHub issues](https://github.com/berkayoz/hugo-bearppuccin/issues) or the [Hugo Discourse](https://discourse.gohugo.io/)
 
 We aim to keep this theme as simple and fast as the original [Bear Blog](https://bearblog.dev), while making it a friendly space for everyone to contribute and share their experiences.
 
@@ -99,5 +99,5 @@ A special thank you goes out to [Herman](https://herman.bearblog.dev), for creat
 [MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Jan Raasch](https://www.janraasch.com)
 
 [hugo-setup-guide]: https://gohugo.io/getting-started/installing
-[light-screenshot]: https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot.png
-[dark-screenshot]: https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot-dark.png
+[light-screenshot]: https://raw.githubusercontent.com/berkayoz/hugo-bearppuccin/master/images/screenshot.png
+[dark-screenshot]: https://raw.githubusercontent.com/berkayoz/hugo-bearppuccin/master/images/screenshot-dark.png
